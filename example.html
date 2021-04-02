@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+	<meta charset="UTF-8">
+	<title>Text slider</title>
+	
+	<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="text-slider.css">
+
+</head>
+<body>
+	<h1>Text Slider</h1>
+	<hr>
+	<div id="banner" style="height: 250px;">
+
+		<div class="text-slider">
+			<div class="item">
+				<div>Element N°1</div>
+				<!-- As much lines as you want ! -->
+			</div>
+			<div class="item">
+				<div>Element N°2</div>
+				<div>blabla</div>
+				<!-- As much lines as you want ! -->
+			</div>
+			<div class="item">
+				<div>Element N°3</div>
+				<div>bla bla bla</div>
+				<!-- As much lines as you want ! -->
+			</div>
+			<div class="item">
+				<div>Element N°4</div>
+				<div>bla bla blabla</div>
+				<div>bla bla bla bla</div>
+				<!-- As much lines as you want ! -->
+			</div>
+		</div>
+		
+	</div>
+
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+<script src="text-slider.js"></script>
+<script type="text/javascript">
+	var textSlider = new TextSlider('.text-slider', {
+		pause: 3000,
+		speed: 1000,
+		opacity: true,
+	});
+</script>
+
+</html>
